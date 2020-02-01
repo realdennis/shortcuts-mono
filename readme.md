@@ -15,8 +15,10 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 
 - [sc-build](https://github.com/realdennis/shortcuts-mono/tree/master/packages/tools/sc-build)
 (A nodejs library to build actions of different package into corresponding target folder)
-- [sc-get](https://github.com/realdennis/shortcuts-mono/tree/master/packages/tools/sc-build)
+- [sc-get](https://github.com/realdennis/shortcuts-mono/tree/master/packages/tools/sc-get)
 (Get the shortcut file from iCloud link by one command)
+- [sc-reverse](https://github.com/realdennis/shortcuts-mono/tree/master/packages/tools/sc-reverse)
+(Reverse the shortcut file to JSON, also you can dump icon meta only)
 
 ---
 
