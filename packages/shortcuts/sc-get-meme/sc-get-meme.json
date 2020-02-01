@@ -1,0 +1,226 @@
+{
+  "WFWorkflowClientVersion": "1050.4.6",
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
+  ],
+  "WFWorkflowClientRelease": "3.0",
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 463140863,
+    "WFWorkflowIconGlyphNumber": 59834
+  },
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowTypes": [
+    "NCWidget",
+    "WatchKit"
+  ],
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+      "WFWorkflowActionParameters": {
+        "WFCommentActionText": "Get random meme, designed by @realdennis!"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+      "WFWorkflowActionParameters": {
+        "WFURLActionURL": "https://www.reddit.com/r/memes/top/.json?limit=50",
+        "UUID": "B7921FD9-30D1-4594-9209-5E0A16811CFE"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+      "WFWorkflowActionParameters": {
+        "WFURL": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "B7921FD9-30D1-4594-9209-5E0A16811CFE",
+                "Type": "ActionOutput",
+                "OutputName": "URL"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "C6A5BCF5-9754-4CEA-9148-805A02DE4D53"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "C6A5BCF5-9754-4CEA-9148-805A02DE4D53",
+            "Type": "ActionOutput",
+            "OutputName": "Contents of URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E",
+        "WFDictionaryKey": "data"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E",
+            "Type": "ActionOutput",
+            "OutputName": "Dictionary Value"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "6003F3A8-47AC-45C2-A389-826EF8610AA4",
+        "WFDictionaryKey": "children"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "6003F3A8-47AC-45C2-A389-826EF8610AA4",
+            "Type": "ActionOutput",
+            "OutputName": "Dictionary Value"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "GroupingIdentifier": "ACAAADC4-605E-4FF8-859C-0F4E040337DC",
+        "WFControlFlowMode": 0
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "VariableName": "Repeat Item",
+            "Type": "Variable"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "6B08312F-CEB1-4545-A1B1-17C70397F91B",
+        "WFDictionaryKey": "data"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "6B08312F-CEB1-4545-A1B1-17C70397F91B",
+            "Type": "ActionOutput",
+            "OutputName": "Dictionary Value"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "DB0C9CD8-F311-4E1F-BD76-7D8A2B78E0A6",
+        "WFDictionaryKey": "url"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
+      "WFWorkflowActionParameters": {
+        "UUID": "662B99EA-C03E-47A4-84F9-A3248DE47BCC",
+        "GroupingIdentifier": "ACAAADC4-605E-4FF8-859C-0F4E040337DC",
+        "WFControlFlowMode": 2
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+      "WFWorkflowActionParameters": {
+        "WFContentItemInputParameter": {
+          "Value": {
+            "OutputUUID": "662B99EA-C03E-47A4-84F9-A3248DE47BCC",
+            "Type": "ActionOutput",
+            "OutputName": "Repeat Results"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFContentItemLimitEnabled": true,
+        "WFContentItemSortProperty": "Random",
+        "UUID": "11D694D4-AAA8-4019-A5A9-5D94C315B5FB",
+        "WFContentItemLimitNumber": 1,
+        "WFContentItemFilter": {
+          "Value": {
+            "WFActionParameterFilterPrefix": 0,
+            "WFContentPredicateBoundedDate": false,
+            "WFActionParameterFilterTemplates": [
+              {
+                "Operator": 9,
+                "Values": {
+                  "Unit": 4,
+                  "String": "jpg"
+                },
+                "Removable": true,
+                "Property": "Name"
+              },
+              {
+                "Operator": 9,
+                "Values": {
+                  "Unit": 4,
+                  "String": "png"
+                },
+                "Removable": true,
+                "Property": "Name"
+              }
+            ]
+          },
+          "WFSerializationType": "WFContentPredicateTableTemplate"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.downloadurl",
+      "WFWorkflowActionParameters": {
+        "WFURL": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "11D694D4-AAA8-4019-A5A9-5D94C315B5FB",
+                "Type": "ActionOutput",
+                "OutputName": "Files"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "53F2C59B-D8A0-4615-BE16-0DD854A4BE38"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.previewdocument",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "53F2C59B-D8A0-4615-BE16-0DD854A4BE38",
+            "Type": "ActionOutput",
+            "OutputName": "Contents of URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        }
+      }
+    }
+  ],
+  "WFWorkflowMinimumClientVersionString": "900"
+}

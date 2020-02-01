@@ -6,4 +6,4 @@ So that you can install your local shortcut by simple http server!
 
 ### Usage
 
-Currently, this shortcut could not be implement using `shortcut-js`, to note the logic of this shortcu I put the reversed JSON of the `remote-installer` temporary untile `shortcut-js` support `Save File`.
+Currently, this shortcut could not be implement using `shortcut-js`, to note the logic of this shortcu I put the reversed JSON of the `remote-installer` temporary until `shortcut-js` support `Save File`.

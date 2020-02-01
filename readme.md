@@ -12,6 +12,8 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 (Download any music or video on website)
 - [sc-remote-installer](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-remote-installer)
 (Install shortcut without iCloud link, it should be useful after you build the script on desktop)
+- [sc-get-meme](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-get-meme)
+(Click to get a random meme, I put it on my homescreen for fun!)
 
 ### List of tools
 
