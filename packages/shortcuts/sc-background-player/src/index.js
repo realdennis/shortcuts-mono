@@ -1,10 +1,9 @@
-const { withVariables, actionOutput } = require("@joshfarrant/shortcuts-js");
+const { actionOutput } = require("@joshfarrant/shortcuts-js");
 const {
   comment,
   conditional,
   openURLs,
-  runJavaScriptOnWebPage,
-  URL
+  runJavaScriptOnWebPage
 } = require("@joshfarrant/shortcuts-js/actions");
 
 const userscript = require("./userscript");
