@@ -1,0 +1,19 @@
+{
+  "name": "sc-music-video-downloader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "entry": "src/index.js",
+  "output": "dist",
+  "scripts": {
+    "build": "sc-build",
+    "prepublishOnly": "rimraf dist/ && yarn build"
+  },
+  "dependencies": {
+    "@joshfarrant/shortcuts-js": "^0.6.0",
+    "sc-build": "^1.0.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.1"
+  }
+}
