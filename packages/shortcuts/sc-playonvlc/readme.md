@@ -1,6 +1,7 @@
 ## sc-playonvlc
 
 Play any video on vlc player, create for background playing!
+[iCloud link](https://www.icloud.com/shortcuts/4670d9843128478dbba8810c7e744ef7)
 
 ### Prerequisite
 

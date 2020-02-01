@@ -1,7 +1,7 @@
 ## sc-music-video-downloader
 
 Download music or video by one click.
-
+[iCloud link](https://www.icloud.com/shortcuts/4665c862ce68423282ebe59d733350df)
 
 ### Prerequisite
 

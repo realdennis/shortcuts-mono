@@ -1,6 +1,7 @@
 ## sc-background-player
 
 Play any video in the background using the new tab of Safari, so you can change the play/pause state in control center.
+[iCloud link](https://www.icloud.com/shortcuts/53ca3f489f6f406b9dd130072332c506)
 
 ### Goal
 
