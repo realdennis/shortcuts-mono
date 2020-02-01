@@ -1,0 +1,110 @@
+{
+  "WFWorkflowClientVersion": "1050.4.6",
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowClientRelease": "3.0",
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": -314141441,
+    "WFWorkflowIconGlyphNumber": 59693
+  },
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowActions": [
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+      "WFWorkflowActionParameters": {
+        "WFAskActionDefaultAnswerURL": "http://192.168.1.108:8000/dist/sc-backgroundplayer.shortcut",
+        "UUID": "EECE8738-1107-4FBF-8A46-A620584CA872",
+        "WFInputType": "URL",
+        "WFAskActionPrompt": "Enter the URL of shortcut"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "EECE8738-1107-4FBF-8A46-A620584CA872",
+            "Type": "ActionOutput",
+            "OutputName": "Provided Input"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "WFAskWhereToSave": false,
+        "WFSaveFileOverwrite": true,
+        "UUID": "0DAAC508-4BFE-46C2-89A6-089C44FBA597"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.file.getlink",
+      "WFWorkflowActionParameters": {
+        "WFFile": {
+          "Value": {
+            "OutputUUID": "0DAAC508-4BFE-46C2-89A6-089C44FBA597",
+            "Type": "ActionOutput",
+            "OutputName": "Saved File"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        },
+        "UUID": "20510D82-34D5-4D59-BC04-A12C0603EF95"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+      "WFWorkflowActionParameters": {
+        "WFMatchTextPattern": "[^\\/]+$",
+        "text": {
+          "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "OutputUUID": "20510D82-34D5-4D59-BC04-A12C0603EF95",
+                "Type": "ActionOutput",
+                "OutputName": "Link to File"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "B434ADB4-51DE-42AD-A041-17AD461B606E"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+      "WFWorkflowActionParameters": {
+        "WFURLActionURL": {
+          "Value": {
+            "string": "workflow://shortcuts/￼",
+            "attachmentsByRange": {
+              "{21, 1}": {
+                "OutputUUID": "B434ADB4-51DE-42AD-A041-17AD461B606E",
+                "Type": "ActionOutput",
+                "OutputName": "Matches"
+              }
+            }
+          },
+          "WFSerializationType": "WFTextTokenString"
+        },
+        "UUID": "3C256CB8-2C87-43CB-9EE1-0D32BDD812F1"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "3C256CB8-2C87-43CB-9EE1-0D32BDD812F1",
+            "Type": "ActionOutput",
+            "OutputName": "URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        }
+      }
+    }
+  ],
+  "WFWorkflowTypes": [
+    "WatchKit"
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFURLContentItem"
+  ]
+}

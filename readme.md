@@ -10,6 +10,8 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 (Play any video on new safari tab to bypass visibility detection, create for background playing!)
 - [sc-music-video-downloader](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-music-video-downloader)
 (Download any music or video on website)
+- [sc-remote-installer](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-remote-installer)
+(Install shortcut without iCloud link, it should be useful after you build the script on desktop)
 
 ### List of tools
 
