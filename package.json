@@ -1,0 +1,13 @@
+{
+  "name": "shortcuts-js-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@joshfarrant/shortcuts-js": "^0.6.0",
+    "rimraf": "^3.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
