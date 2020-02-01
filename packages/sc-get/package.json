@@ -1,0 +1,28 @@
+{
+  "name": "sc-get",
+  "version": "1.0.4",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "bin": {
+    "sc-get": "dist/index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clear": "rimraf dist/",
+    "prepublishOnly": "npm run clear && npm run build"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node-fetch": "^2.5.4",
+    "rimraf": "^3.0.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
