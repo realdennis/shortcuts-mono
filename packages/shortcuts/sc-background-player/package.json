@@ -9,11 +9,9 @@
     "build": "sc-build",
     "prepublishOnly": "rimraf dist/ && yarn build"
   },
-  "dependencies": {
-    "@joshfarrant/shortcuts-js": "^0.6.0",
-    "sc-build": "^1.0.2"
-  },
   "devDependencies": {
-    "rimraf": "^3.0.1"
+    "@joshfarrant/shortcuts-js": "^0.6.0",
+    "rimraf": "^3.0.1",
+    "sc-build": "^1.0.2"
   }
 }
