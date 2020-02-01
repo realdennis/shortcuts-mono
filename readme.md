@@ -6,6 +6,8 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 
 - [sc-playonvlc](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-playonvlc)
 (Play any video on vlc player, create for background playing!)
+- [sc-background-player](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-background-player)
+(Play any video on new safari tab to bypass visibility detection, create for background playing!)
 
 ### List of tools
 
