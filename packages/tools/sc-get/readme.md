@@ -7,7 +7,7 @@ Get the shortcut file by one command on you desktop device.
 $ npm install sc-get -g
 ```
 
-![](https://raw.githubusercontent.com/realdennis/shortcuts-mono/master/packages/sc-get/assets/demo.png)
+![](https://raw.githubusercontent.com/realdennis/shortcuts-mono/master/packages/tools/sc-get/assets/demo.png)
 
 ### Usage
 ```sh

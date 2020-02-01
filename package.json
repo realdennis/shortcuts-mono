@@ -8,6 +8,7 @@
     "rimraf": "^3.0.0"
   },
   "workspaces": [
-    "packages/*"
+    "packages/tools/*",
+    "packages/shortcuts/*"
   ]
 }
