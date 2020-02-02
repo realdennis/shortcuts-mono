@@ -1,5 +1,17 @@
 {
   "WFWorkflowClientVersion": "1050.4.6",
+  "WFWorkflowTypes": [
+    "NCWidget",
+    "WatchKit"
+  ],
+  "WFWorkflowClientRelease": "3.0",
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowIcon": {
+    "WFWorkflowIconStartColor": 463140863,
+    "WFWorkflowIconGlyphNumber": 59834
+  },
+  "WFWorkflowImportQuestions": [],
+  "WFWorkflowMinimumClientVersionString": "900",
   "WFWorkflowInputContentItemClasses": [
     "WFAppStoreAppContentItem",
     "WFArticleContentItem",
@@ -18,17 +30,6 @@
     "WFSafariWebPageContentItem",
     "WFStringContentItem",
     "WFURLContentItem"
-  ],
-  "WFWorkflowClientRelease": "3.0",
-  "WFWorkflowIcon": {
-    "WFWorkflowIconStartColor": 463140863,
-    "WFWorkflowIconGlyphNumber": 59834
-  },
-  "WFWorkflowMinimumClientVersion": 900,
-  "WFWorkflowImportQuestions": [],
-  "WFWorkflowTypes": [
-    "NCWidget",
-    "WatchKit"
   ],
   "WFWorkflowActions": [
     {
@@ -220,7 +221,68 @@
           "WFSerializationType": "WFTextTokenAttachment"
         }
       }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuPrompt": "",
+        "WFControlFlowMode": 0,
+        "WFMenuItems": [
+          "Share",
+          "Save Image"
+        ],
+        "GroupingIdentifier": "2439E1C7-6DCC-44BC-ABB3-0A2F6064CE4B"
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "Share",
+        "GroupingIdentifier": "2439E1C7-6DCC-44BC-ABB3-0A2F6064CE4B",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.share",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "53F2C59B-D8A0-4615-BE16-0DD854A4BE38",
+            "Type": "ActionOutput",
+            "OutputName": "Contents of URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "WFMenuItemTitle": "Save Image",
+        "GroupingIdentifier": "2439E1C7-6DCC-44BC-ABB3-0A2F6064CE4B",
+        "WFControlFlowMode": 1
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.savetocameraroll",
+      "WFWorkflowActionParameters": {
+        "WFInput": {
+          "Value": {
+            "OutputUUID": "53F2C59B-D8A0-4615-BE16-0DD854A4BE38",
+            "Type": "ActionOutput",
+            "OutputName": "Contents of URL"
+          },
+          "WFSerializationType": "WFTextTokenAttachment"
+        }
+      }
+    },
+    {
+      "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
+      "WFWorkflowActionParameters": {
+        "UUID": "C39EE726-6ED8-4685-A440-0D08734BA526",
+        "GroupingIdentifier": "2439E1C7-6DCC-44BC-ABB3-0A2F6064CE4B",
+        "WFControlFlowMode": 2
+      }
     }
-  ],
-  "WFWorkflowMinimumClientVersionString": "900"
+  ]
 }
