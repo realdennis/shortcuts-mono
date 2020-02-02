@@ -1,4 +1,6 @@
-## sc-remote-installer
+## sc-get-meme
+
+![Demo gif](https://media.giphy.com/media/Up1NilzehsUTjOQNZo/giphy.gif)
 
 A shortcut that you can get random meme by one clicking, I always put it on my homescreen!
 [iCloud link](https://www.icloud.com/shortcuts/398557f192b24363b7c2b256d38f7d9b)
