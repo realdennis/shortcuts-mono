@@ -1,7 +1,9 @@
 ## sc-playonvlc
 
+![Demo gif](https://media.giphy.com/media/IhDJUBLsD1bCsTo8a3/giphy.gif)
+
 Play any video on vlc player, create for background playing!
-[iCloud link](https://www.icloud.com/shortcuts/4670d9843128478dbba8810c7e744ef7)
+[iCloud link](https://www.icloud.com/shortcuts/71df79aa7bf54e59bac13415c036c1c8)
 
 ### Prerequisite
 
