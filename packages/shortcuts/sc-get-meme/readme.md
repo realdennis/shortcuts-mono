@@ -3,7 +3,12 @@
 A shortcut that you can get random meme by one clicking, I always put it on my homescreen!
 [iCloud link](https://www.icloud.com/shortcuts/398557f192b24363b7c2b256d38f7d9b)
 
-### Usage
+### Build
+
+```sh
+$ yarn build
+```
+And the shortcut file might be the `dist` folder
 
 Currently, this shortcut could not be implement using `shortcut-js`, to note the logic of this shortcu I put the reversed JSON of the `get-meme` temporary until `shortcut-js` support [`repeat with`](https://github.com/joshfarrant/shortcuts-js/pull/371) and [`filter file`](https://github.com/joshfarrant/shortcuts-js/pull/372).
 

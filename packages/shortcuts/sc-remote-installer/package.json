@@ -1,0 +1,13 @@
+{
+  "name": "sc-remote-installer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "entry": "src/index.json",
+  "scripts": {
+    "build": "sc-build --fromJSON"
+  },
+  "dependencies": {
+    "sc-build": "^1.0.3"
+  }
+}

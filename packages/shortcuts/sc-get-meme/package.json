@@ -1,0 +1,12 @@
+{
+  "name": "sc-get-meme",
+  "version": "1.0.0",
+  "entry": "src/index.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "sc-build --fromJSON"
+  },
+  "dependencies": {
+    "sc-build": "^1.0.2"
+  }
+}
