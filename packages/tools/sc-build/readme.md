@@ -28,8 +28,25 @@ Run build script
 $ yarn build 
 ```
 
+### Build from JSON
+
+Some shortcut might be reversed to a raw json file by `sc-reverse`, and could not be implemented by shortcut-js currently. 
+
+But you can also build back to `.shortcut` using `sc-build --fromJSON`, so that other contributor / developer could build their own latest shortcut instead download from iCloud.
+
+```json
+{
+    "...":"",
+    "entry": "src/index.json",
+    "target": "dist/",
+    "scripts":{
+        "build": "sc-build --fromJSON"
+    }
+}
+```
+
 ### Note 
-If you do note the `entry` / `target` metas in package.json, it will using the default value (`src/` / `dist/`).
+If you do note the `entry` / `target` metas in package.json, it will using the default value (`src/index.js` / `dist/`).
 
 ---
 

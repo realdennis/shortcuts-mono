@@ -1,11 +1,12 @@
 {
   "name": "sc-build",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "bin": "./index.js",
   "dependencies": {
     "@joshfarrant/shortcuts-js": "^0.6.0",
+    "bplist-creator": "^0.0.8",
     "yargs": "^15.1.0"
   }
 }
