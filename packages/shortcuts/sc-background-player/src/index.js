@@ -1,9 +1,10 @@
-const { actionOutput } = require("@joshfarrant/shortcuts-js");
+const { actionOutput, withVariables } = require("@joshfarrant/shortcuts-js");
 const {
   comment,
   conditional,
   openURLs,
-  runJavaScriptOnWebPage
+  runJavaScriptOnWebPage,
+  URL
 } = require("@joshfarrant/shortcuts-js/actions");
 
 const userscript = require("./userscript");
@@ -35,9 +36,7 @@ completion(result);`
   conditional({
     input: "Contains",
     value: "http",
-    ifTrue: [
-      openURLs()
-    ]
+    ifTrue: [URL({ url: withVariables`${output}` }), openURLs()]
   })
 ];
 

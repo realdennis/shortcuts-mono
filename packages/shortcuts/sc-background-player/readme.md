@@ -3,7 +3,8 @@
 ![Demo gif](https://media.giphy.com/media/RkJZmcazsQuf3e3XUB/giphy.gif)
 
 Play any video in the background using the new tab of Safari, so you can change the play/pause state in control center.
-[iCloud link](https://www.icloud.com/shortcuts/53ca3f489f6f406b9dd130072332c506)
+
+[iCloud link](https://www.icloud.com/shortcuts/d57d3a844e204905939aba40734cbc14)
 
 ### Goal
 
