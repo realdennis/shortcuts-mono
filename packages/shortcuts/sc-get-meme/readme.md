@@ -4,7 +4,7 @@
 
 A shortcut that you can get random meme by one clicking, I always put it on my homescreen!
 
-[iCloud link](https://www.icloud.com/shortcuts/4908fe7ff41a4a08824230fb3bcaf889)
+[iCloud link](https://www.icloud.com/shortcuts/05d47e8bbcd647e7bde31d09d3070f88)
 
 ### Build
 
