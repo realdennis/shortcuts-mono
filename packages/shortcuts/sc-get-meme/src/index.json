@@ -1,35 +1,20 @@
 {
-  "WFWorkflowClientVersion": "1050.4.6",
-  "WFWorkflowTypes": [
-    "NCWidget",
-    "WatchKit"
-  ],
+  "WFWorkflowMinimumClientVersionString": "900",
+  "WFWorkflowClientVersion": "1050.4.7",
   "WFWorkflowClientRelease": "3.0",
-  "WFWorkflowMinimumClientVersion": 900,
   "WFWorkflowIcon": {
     "WFWorkflowIconStartColor": 463140863,
     "WFWorkflowIconGlyphNumber": 59834
   },
-  "WFWorkflowImportQuestions": [],
-  "WFWorkflowMinimumClientVersionString": "900",
-  "WFWorkflowInputContentItemClasses": [
-    "WFAppStoreAppContentItem",
-    "WFArticleContentItem",
-    "WFContactContentItem",
-    "WFDateContentItem",
-    "WFEmailAddressContentItem",
-    "WFGenericFileContentItem",
-    "WFImageContentItem",
-    "WFiTunesProductContentItem",
-    "WFLocationContentItem",
-    "WFDCMapsLinkContentItem",
-    "WFAVAssetContentItem",
-    "WFPDFContentItem",
-    "WFPhoneNumberContentItem",
-    "WFRichTextContentItem",
-    "WFSafariWebPageContentItem",
-    "WFStringContentItem",
-    "WFURLContentItem"
+  "WFWorkflowMinimumClientVersion": 900,
+  "WFWorkflowImportQuestions": [
+    {
+      "ParameterKey": "WFContentItemLimitNumber",
+      "Category": "Parameter",
+      "ActionIndex": 7,
+      "Text": "How many memes you want to get?",
+      "DefaultValue": 4
+    }
   ],
   "WFWorkflowActions": [
     {
@@ -75,23 +60,8 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E",
-        "WFDictionaryKey": "data"
-      }
-    },
-    {
-      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-      "WFWorkflowActionParameters": {
-        "WFInput": {
-          "Value": {
-            "OutputUUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E",
-            "Type": "ActionOutput",
-            "OutputName": "Dictionary Value"
-          },
-          "WFSerializationType": "WFTextTokenAttachment"
-        },
-        "UUID": "6003F3A8-47AC-45C2-A389-826EF8610AA4",
-        "WFDictionaryKey": "children"
+        "WFDictionaryKey": "data.children",
+        "UUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E"
       }
     },
     {
@@ -99,7 +69,7 @@
       "WFWorkflowActionParameters": {
         "WFInput": {
           "Value": {
-            "OutputUUID": "6003F3A8-47AC-45C2-A389-826EF8610AA4",
+            "OutputUUID": "9ACC4CF5-4382-468D-978F-5D9674681F8E",
             "Type": "ActionOutput",
             "OutputName": "Dictionary Value"
           },
@@ -119,31 +89,16 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "6B08312F-CEB1-4545-A1B1-17C70397F91B",
-        "WFDictionaryKey": "data"
-      }
-    },
-    {
-      "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
-      "WFWorkflowActionParameters": {
-        "WFInput": {
-          "Value": {
-            "OutputUUID": "6B08312F-CEB1-4545-A1B1-17C70397F91B",
-            "Type": "ActionOutput",
-            "OutputName": "Dictionary Value"
-          },
-          "WFSerializationType": "WFTextTokenAttachment"
-        },
-        "UUID": "DB0C9CD8-F311-4E1F-BD76-7D8A2B78E0A6",
-        "WFDictionaryKey": "url"
+        "WFDictionaryKey": "data.url",
+        "UUID": "6B08312F-CEB1-4545-A1B1-17C70397F91B"
       }
     },
     {
       "WFWorkflowActionIdentifier": "is.workflow.actions.repeat.each",
       "WFWorkflowActionParameters": {
-        "UUID": "662B99EA-C03E-47A4-84F9-A3248DE47BCC",
+        "WFControlFlowMode": 2,
         "GroupingIdentifier": "ACAAADC4-605E-4FF8-859C-0F4E040337DC",
-        "WFControlFlowMode": 2
+        "UUID": "662B99EA-C03E-47A4-84F9-A3248DE47BCC"
       }
     },
     {
@@ -160,11 +115,10 @@
         "WFContentItemLimitEnabled": true,
         "WFContentItemSortProperty": "Random",
         "UUID": "11D694D4-AAA8-4019-A5A9-5D94C315B5FB",
-        "WFContentItemLimitNumber": 1,
+        "WFContentItemLimitNumber": 4,
         "WFContentItemFilter": {
           "Value": {
             "WFActionParameterFilterPrefix": 0,
-            "WFContentPredicateBoundedDate": false,
             "WFActionParameterFilterTemplates": [
               {
                 "Operator": 9,
@@ -184,7 +138,8 @@
                 "Removable": true,
                 "Property": "Name"
               }
-            ]
+            ],
+            "WFContentPredicateBoundedDate": false
           },
           "WFSerializationType": "WFContentPredicateTableTemplate"
         }
@@ -279,10 +234,33 @@
     {
       "WFWorkflowActionIdentifier": "is.workflow.actions.choosefrommenu",
       "WFWorkflowActionParameters": {
-        "UUID": "C39EE726-6ED8-4685-A440-0D08734BA526",
+        "WFControlFlowMode": 2,
         "GroupingIdentifier": "2439E1C7-6DCC-44BC-ABB3-0A2F6064CE4B",
-        "WFControlFlowMode": 2
+        "UUID": "C39EE726-6ED8-4685-A440-0D08734BA526"
       }
     }
+  ],
+  "WFWorkflowTypes": [
+    "NCWidget",
+    "WatchKit"
+  ],
+  "WFWorkflowInputContentItemClasses": [
+    "WFAppStoreAppContentItem",
+    "WFArticleContentItem",
+    "WFContactContentItem",
+    "WFDateContentItem",
+    "WFEmailAddressContentItem",
+    "WFGenericFileContentItem",
+    "WFImageContentItem",
+    "WFiTunesProductContentItem",
+    "WFLocationContentItem",
+    "WFDCMapsLinkContentItem",
+    "WFAVAssetContentItem",
+    "WFPDFContentItem",
+    "WFPhoneNumberContentItem",
+    "WFRichTextContentItem",
+    "WFSafariWebPageContentItem",
+    "WFStringContentItem",
+    "WFURLContentItem"
   ]
 }
