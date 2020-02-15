@@ -14,6 +14,8 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 (Install shortcut without iCloud link, it should be useful after you build the script on desktop)
 - [sc-get-meme](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-get-meme)
 (Click to get a random meme, I put it on my homescreen for fun!)
+- [sc-ytmusic-bgp](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-ytmusic-bgp)
+(Designed for bypassing visibility & mobile mode detect, also auto loop in background.)
 
 ### List of tools
 

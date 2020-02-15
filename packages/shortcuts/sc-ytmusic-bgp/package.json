@@ -1,0 +1,17 @@
+{
+  "name": "sc-ytmusic-bgp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "entry": "src/index.js",
+  "output": "dist",
+  "scripts": {
+    "build": "sc-build",
+    "prepublishOnly": "rimraf dist/ && yarn build"
+  },
+  "devDependencies": {
+    "@joshfarrant/shortcuts-js": "^0.6.0",
+    "rimraf": "^3.0.1",
+    "sc-build": "^1.0.2"
+  }
+}
