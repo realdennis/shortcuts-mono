@@ -2,7 +2,7 @@
 
 Open the video page on Safari, click the share button and launch this shortcut only once!
 
-Demo gif: TBD
+![Demo gif](https://media.giphy.com/media/JUYhUJB6BFUkshLbtM/giphy.gif)
 
 [iCloud link](https://www.icloud.com/shortcuts/cac7206e04eb49138e7dda8f317a2348)
 
