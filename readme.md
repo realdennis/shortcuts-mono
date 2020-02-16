@@ -6,15 +6,13 @@ Some useful iOS shortcuts, create by @realdennis using awesome library `shortcut
 
 - [sc-playonvlc](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-playonvlc)
 (Play any video on vlc player, create for background playing!)
-- [sc-background-player](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-background-player)
-(Play any video on new safari tab to bypass visibility detection, create for background playing!)
 - [sc-music-video-downloader](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-music-video-downloader)
 (Download any music or video on website)
 - [sc-remote-installer](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-remote-installer)
 (Install shortcut without iCloud link, it should be useful after you build the script on desktop)
 - [sc-get-meme](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-get-meme)
 (Click to get a random meme, I put it on my homescreen for fun!)
-- [sc-ytmusic-bgp](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-ytmusic-bgp)
+- [sc-background-player](https://github.com/realdennis/shortcuts-mono/tree/master/packages/shortcuts/sc-background-player)
 (Designed for bypassing visibility & mobile mode detect, also auto loop in background.)
 
 ### List of tools
