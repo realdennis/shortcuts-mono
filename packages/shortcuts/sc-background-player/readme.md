@@ -1,25 +1,16 @@
 ## sc-background-player
 
-![Demo gif](https://media.giphy.com/media/RkJZmcazsQuf3e3XUB/giphy.gif)
+Open the video page on Safari, click the share button and launch this shortcut only once!
 
-Play any video in the background using the new tab of Safari, so you can change the play/pause state in control center.
+![Demo gif](https://media.giphy.com/media/JUYhUJB6BFUkshLbtM/giphy.gif)
 
-[iCloud link](https://www.icloud.com/shortcuts/d57d3a844e204905939aba40734cbc14)
+[iCloud link](https://www.icloud.com/shortcuts/cac7206e04eb49138e7dda8f317a2348)
 
 ### Goal
 
-To bypass some annoyed visibility detection, you can 
+Play on background / collapse / auto loop.
 
-### Prerequisite
-
-Nope
-
-### Usage
-
-Open the video page on Safari, click the share button and launch this shortcut!
-
-If you cannot find this shortcut, please go to the shortcut dashboard, and update the details of this shortcuts:
-- Turn on the swich of `Show in Share Sheet`
+Designed for bypassing visibility & mobile mode detect, also auto loop in background.
 
 ---
 
