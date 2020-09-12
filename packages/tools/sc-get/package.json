@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
